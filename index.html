@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const nombres = ["Tuna", "Trakula", "Tulachi", "AlanSiwi"];
+      //for clásico
+      for (i = 0; i < nombres.length; i++) {
+        console.log(nombres[i]);
+      }
+      //for of
+      for (nombre of nombres) {
+        console.log(nombre);
+      }
+      //forEach
+      nombres.forEach((nombre, i) => {
+        console.log(nombre + " Posicion: " + i);
+      });
+      //for in
+      for (let i in nombres) {
+        console.log(nombres[i] + " Posicion: " + i);
+      }
+    </script>
+  </body>
+</html>
